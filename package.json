@@ -1,0 +1,21 @@
+{
+  "name": "vue-parcel-starter",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "parcel build index.html --public-url ./",
+    "dev": "parcel index.html",
+    "start": "parcel watch index.html --public-url ./"
+  },
+  "dependencies": {
+    "vue": "^2.5.17",
+    "vue-hot-reload-api": "^2.3.1",
+    "vue-router": "^3.0.1",
+    "vue-worker": "^1.2.1"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^2.2.0",
+    "cssnano": "^4.1.5",
+    "vue-template-compiler": "^2.5.17"
+  }
+}
