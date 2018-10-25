@@ -3,9 +3,12 @@ import App from './App.vue'
 import router from './router'
 
 import './bootstrap.js'
-import hack from './mixins/hack'
+import dayjs from 'dayjs'
 
-Vue.mixin(hack)
+import kbAction from './mixins/kbAction'
+
+window.dayjs = dayjs
+Vue.mixin(kbAction)
 
 new Vue({ // eslint-disable-line no-new
   el: '#app',
