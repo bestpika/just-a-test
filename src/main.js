@@ -1,11 +1,13 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
+import hackPlugin from './plugins/hack'
 
 import './bootstrap.js'
-import hack from './mixins/hack'
+import hackMixin from './mixins/hack'
 
-Vue.mixin(hack)
+Vue.use(hackPlugin)
+Vue.mixin(hackMixin)
 
 new Vue({ // eslint-disable-line no-new
   el: '#app',
