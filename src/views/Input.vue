@@ -17,10 +17,10 @@
         <label>輸入3</label>
         <select class="form-control kb-2-0">
           <option></option>
-          <option>選項1</option>
-          <option>選項2</option>
-          <option>選項3</option>
-          <option>選項4</option>
+          <option>Human</option>
+          <option>Cat</option>
+          <option>Dog</option>
+          <option>Coffee</option>
         </select>
       </div>
     </div>
@@ -41,7 +41,7 @@
 <script>
   export default {
     name: 'Input',
-    data () {
+    data() {
       return {
         input4: dayjs().format('YYYY-MM-DDTHH:mm')
       }
