@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <input type="hidden">
     <router-view></router-view>
   </div>
 </template>
