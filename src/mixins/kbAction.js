@@ -36,9 +36,11 @@ export default {
     },
     kbWTF: function (e) {
       switch (e.keyCode) {
-        case 9:
-        case 38:
-        case 40:
+        case 9: // [TAB]
+          e.preventDefault()
+          break
+        case 38: // [↑]
+        case 40: // [↓]
           if (e.shiftKey) {
             e.preventDefault()
           }
