@@ -38,6 +38,7 @@ export default {
       switch (e.keyCode) {
         case 9: // [TAB]
           e.preventDefault()
+          document.querySelector('.focused').focus()
           break
         case 38: // [↑]
         case 40: // [↓]
