@@ -2,6 +2,9 @@ export default {
   methods: {
     kbFunc: function (e) {
       let input = document.querySelectorAll('input[class*="kb-"]')
+      if (e.altKey && [37, 39].includes(e.keyCode)) {
+        return
+      }
       if (input.length > 0 && !e.shiftKey && [37, 38, 39, 40].includes(e.keyCode)) {
         return
       }
