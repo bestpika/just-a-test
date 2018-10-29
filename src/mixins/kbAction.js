@@ -23,6 +23,8 @@ export default {
         case 119:
           row += 1
           break
+        default:
+          return
       }
       console.info(`[${row}, ${col}]`)
       let fNew = document.querySelector(`.kb-${row}-${col}`)
@@ -47,6 +49,8 @@ export default {
           if (e.shiftKey) {
             e.preventDefault()
           }
+          break
+        default:
           break
       }
     },
