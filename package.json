@@ -9,7 +9,7 @@
     "start": "parcel watch index.html --public-url ./ --out-dir docs"
   },
   "dependencies": {
-    "bootstrap": "^4.1.3",
+    "bootstrap": "^4.3.1",
     "dayjs": "^1.7.7",
     "jquery": "^3.5.0",
     "popper.js": "^1.14.4",
